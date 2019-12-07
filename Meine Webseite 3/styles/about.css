@@ -1,0 +1,21 @@
+/*Projektarbeit ük101 Mazlum Aytemür®*/
+
+@keyframes anim1 {
+    from {
+        background-color: mediumspringgreen;
+    }
+    to {
+        background-color: mediumvioletred;
+    }
+}
+
+body {
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+h1 {
+    text-align: center;
+    margin: 400px;
+}

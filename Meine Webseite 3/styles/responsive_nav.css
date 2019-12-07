@@ -1,0 +1,79 @@
+.responsivenav {
+    background-color: rgba(36, 35, 35, 0.411);
+    overflow: hidden;
+}
+
+.responsivenav a {
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 18px;
+    float: left;
+    transition-duration: 0.3s;
+}
+
+.responsivenav a:hover {
+    background-color: rgba(0, 255, 98, 0.37);
+    color: rgb(250, 3, 36);
+    text-shadow: none;
+    font-weight: 800;
+    transform: scale(1.1);
+}
+
+
+.responsivenav .barcontainer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: mintcream;
+    margin: 6px;
+    transition: 0.4s;
+    box-shadow: 10px 10px 5px rgb(62, 63, 62);
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+
+
+@media screen and (max-width: 600px) {
+    .responsivenav a:not(:first-child) {
+        display: none;
+    }
+
+    .responsivenav .barcontainer {
+        float: right;
+        display: block;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+
+    .responsivenav.responsive {
+        position: relative;
+    }
+
+    .responsivenav.responsive .barcontainer {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .responsivenav.responsive a {
+        float: none;
+        display: block;
+    }
+}
